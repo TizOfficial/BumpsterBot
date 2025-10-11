@@ -1,1 +1,101 @@
-coming soon
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bald verfügbar - Bumpster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="/logo.png" alt="Bumpster Logo" class="nav-logo">
+                <span class="brand-text">Bumpster</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="comingsoon-main">
+        <section class="comingsoon-hero">
+            <div class="container">
+                <div class="comingsoon-content">
+                    <h1 class="comingsoon-title">
+                        <span class="gradient-text">Demnächst</span> verfügbar
+                    </h1>
+                    <p class="comingsoon-subtitle">Wir arbeiten hinter den Kulissen an etwas Großem. Bleib dran!</p>
+                    
+                    <div class="notify-form">
+                        <h3>Discord Server</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Erhalte exklusive Updates, frühen Zugang und diskutiere mit anderen Bumpster-Fans!</p>
+                        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                            <a href="https://discord.gg/example" target="_blank" class="btn btn-primary btn-full" style="max-width: 300px;">
+                                <i class="fab fa-discord"></i> Beitreten
+                            </a>
+                        </div>
+                        <div style="margin-top: 2rem; padding: 1rem; background: var(--bg-dark); border-radius: 8px; border: 1px solid var(--border);">
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">
+                                <i class="fas fa-users" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                                Bereits <strong>1.247</strong> Benutzer warten auf den Launch
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating-elements">
+                    <div class="floating-element">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="floating-element">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="floating-element">
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bumpster</h3>
+                    <p>Dein Partner für Discord-Wachstum</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="privacy.html">Datenschutz</a></li>
+                        <li><a href="terms.html">Nutzungsbedingungen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bumpster. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Notify Form
+        document.getElementById("notifyForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const email = document.getElementById("email").value;
+            document.getElementById("formSuccess").style.display = "block";
+            document.getElementById("email").value = "";
+        });
+    </script>
+</body>
+              </html>
